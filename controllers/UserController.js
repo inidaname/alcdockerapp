@@ -26,7 +26,7 @@ router.post('/', function (req, res) {
 router.get('/', function (req, res) {
     User.find({}, function (err, users) {
         if (err) return res.status(500).render('user', {error: "There was a problem finding the users."});
-        res.status(200).render('user', { users });
+        res.status(200).render('user', { users, title: "User Manager" });
     });
 });
 
@@ -35,7 +35,7 @@ router.get('/:id', function (req, res) {
     User.findById(req.params.id, function (err, user) {
         if (err) return res.status(500).render('user', {error: "There was a problem finding the users."});
         if (!user) return res.status(404).render('user', {error: "No user found."});
-        res.status(200).render('person', {user});
+        res.status(200).render('person', {user, title: user.name});
     });
 });
 
