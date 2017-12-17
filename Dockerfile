@@ -1,5 +1,7 @@
 FROM node:7
 
+FROM chekote/bower
+
 WORKDIR /app
 
 RUN npm install nodemon -g
