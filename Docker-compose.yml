@@ -20,6 +20,5 @@ web:
    # linking the database
    links:
       - db
-
    # running the nodemon command
    command: nodemon /app/server.js
