@@ -3,10 +3,13 @@
 
 A docker/nodejs app using mongodb, preferably run with docker-compose
 
-Use with docker
-to build the image return
+Use with docker [Docker](www.docker.com)
+download and install docker guides to install [click here](https://doc.docker.com)
+to build the image run on terminal
 
-`cd alcdocker`
+`git clone https://github.com/inidaname/alcdockerapp.git`
+
+`cd alcdockerapp`
 
 `docker-compose build`
 
