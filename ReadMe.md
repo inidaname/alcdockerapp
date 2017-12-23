@@ -12,6 +12,6 @@ to build the image return
 
 to run the image
 
-`docker-compose run`
+`docker-compose up`
 
 thank you
