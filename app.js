@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 var db = require('./db');
 
 var UserController = require('./controllers/UserController');
+
 var app = express();
 
 

@@ -26,7 +26,7 @@
 			  </div>
 			</div>
 
-			{{#if erroe}}
+			{{#if error}}
 			<div class="notification is-danger">
 				{{error}}
 			</div>
@@ -44,20 +44,7 @@
   </div>
 </div>
 <hr>
-<script>
-document.getElementById('regform').addEventListener("submit", function(event){
-    event.preventDefault()
-});
-function loadAdd() {
-    var node = document.createElement("refresh");
-    var textnode = document.createTextNode();
-    node.appendChild(textnode);
-    document.getElementById("regform").appendChild(node);
-}
-</script>
-
 <div class="columns is-centered is-multiline" id="refresh">
-	{{#if users.length}}
 	{{#each users}}
 	  <div class="column is-one-third is-hover">
 		  <div class="card">
@@ -81,7 +68,6 @@ function loadAdd() {
 		  </div>
 	  </div>
 	  {{/each}}
-	  {{/if}}
 </div>
 <div class="modal" id="modal">
   <div class="modal-background"></div>

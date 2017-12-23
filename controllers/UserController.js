@@ -9,9 +9,6 @@ var passwordHash = require('password-hash');
 
 
 var User = require('../models/UserModel');
-router.get('/', (req, res) => {
-	res.render('user', { title: 'Home Page' });
-});
 // CREATES A NEW USER
 router.post('/', function (req, res) {
     User.create({
